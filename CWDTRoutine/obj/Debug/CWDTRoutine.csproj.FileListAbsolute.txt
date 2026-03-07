@@ -1,0 +1,2 @@
+C:\Users\Administrator\Desktop\poe\MmmjrBot\CWDTRoutine\obj\Debug\CWDTRoutine.csproj.AssemblyReference.cache
+C:\Users\mmmjr\Downloads\poe\MmmjrBot\CWDTRoutine\obj\Debug\CWDTRoutine.csproj.AssemblyReference.cache

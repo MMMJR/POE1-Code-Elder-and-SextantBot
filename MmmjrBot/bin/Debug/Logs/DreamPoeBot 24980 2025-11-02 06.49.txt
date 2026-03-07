@@ -1,0 +1,29 @@
+2025-11-02 06:49:24,500 [1] INFO  App - DreamPoeBot Version: 0.3.26.51
+Path: C:\Users\<Username>\Downloads\DreamPoeBot_v3.26.17-Stable\DreamPoeBot_v3.26.17-Stable\DreamPoeBot\<ExeName>
+Arguments: C:\Users\mmmjr\Downloads\DreamPoeBot_v3.26.17-Stable\DreamPoeBot_v3.26.17-Stable\DreamPoeBot\DreamPoeBot.exe
+
+OS Name: Microsoft Windows 11 Home
+OS Version: 10.0.26100
+OS Architecture: 64-bit
+InstalledUICulture: en-US [English (United States)]
+CurrentUICulture: en-US [English (United States)]
+CurrentCulture: en-US [English (United States)]
+
+2025-11-02 06:49:24,537 [1] INFO  App - Now setting up JitProfiles...
+2025-11-02 06:49:24,545 [1] INFO  App - JitProfiles successfully setup!
+2025-11-02 06:49:24,554 [1] INFO  App - Now checking prerequisites...
+2025-11-02 06:49:24,554 [1] INFO  App - Prerequisite check complete!
+2025-11-02 06:49:25,999 [1] INFO  MainWindow - DreamPoeBot [0.3.26.51] is up to date!
+2025-11-02 06:49:28,324 [7] INFO  Class104 - [Pre-Login] Connecting to BestLatency (194.87.202.217)
+2025-11-02 06:49:29,171 [7] INFO  Class104 - Region: eu
+2025-11-02 06:49:29,172 [7] INFO  Class104 - T: 5250662828110630955 
+2025-11-02 06:49:32,868 [1] INFO  BotManager - [BotManager] MsBetweenTicks = 80
+2025-11-02 06:49:34,183 [1] ERROR App - [Application_DispatcherUnhandledException] Unhandled exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DreamPoeBot.Hooks.Hooking.Deinitialize()
+   at DreamPoeBot.App.OnExit(ExitEventArgs e)
+   at System.Windows.Application.DoShutdown()
+   at System.Windows.Application.ShutdownImpl()
+   at System.Windows.Application.ShutdownCallback(Object arg)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)

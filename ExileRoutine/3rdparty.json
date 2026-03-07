@@ -1,0 +1,12 @@
+{
+  "AssemblyName": "ExileRoutine",
+	"FileList": [
+		"ExileRoutine.cs",
+		"ExileRoutineSettings.cs",
+		"SettingsGui.xaml"
+	],
+  "Dependencies": [
+    "Default\\EXtensions"
+  ],
+  "References": []
+}

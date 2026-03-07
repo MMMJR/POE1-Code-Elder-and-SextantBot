@@ -1,0 +1,75 @@
+2025-11-02 06:44:23,443 [1] INFO  App - DreamPoeBot Version: 0.3.25.105
+Path: C:\Users\<Username>\Desktop\Marcelo\POE1-Code-Elder-and-SextantBot\MmmjrBot\bin\Debug\<ExeName>
+Arguments: C:\Users\mmmjr\Desktop\Marcelo\POE1-Code-Elder-and-SextantBot\MmmjrBot\bin\Debug\DreamPoeBot.exe
+
+OS Name: Microsoft Windows 11 Home
+OS Version: 10.0.26100
+OS Architecture: 64-bit
+InstalledUICulture: en-US [English (United States)]
+CurrentUICulture: en-US [English (United States)]
+CurrentCulture: en-US [English (United States)]
+
+2025-11-02 06:44:23,463 [1] INFO  App - Now setting up JitProfiles...
+2025-11-02 06:44:23,468 [1] INFO  App - JitProfiles successfully setup!
+2025-11-02 06:44:23,472 [1] INFO  App - Now checking prerequisites...
+2025-11-02 06:44:23,472 [1] INFO  App - Prerequisite check complete!
+2025-11-02 06:44:23,694 [1] ERROR App - [Application_DispatcherUnhandledException] Unhandled exception
+System.Windows.Markup.XamlParseException: Initialization of 'DreamPoeBot.DreamPoe.MainWindow' threw an exception. ---> System.TypeInitializationException: The type initializer for 'MahApps.Metro.Behaviours.StylizedBehaviors' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified.
+   at MahApps.Metro.Behaviours.StylizedBehaviors..cctor()
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.RuntimeHelpers._RunClassConstructor(RuntimeType type)
+   at System.Windows.DependencyProperty.FromName(String name, Type ownerType)
+   at System.Windows.Baml2006.Baml2006Reader.WriteTypeConvertedInstance(Int16 converterId, Int32 dataByteSize)
+   at System.Windows.Baml2006.Baml2006Reader.Process_PropertyCustom()
+   at System.Windows.Baml2006.Baml2006Reader.Process_OneBamlRecord()
+   at System.Windows.Baml2006.Baml2006Reader.ReadObject(KeyRecord record)
+   at System.Windows.ResourceDictionary.CreateObject(KeyRecord key)
+   at System.Windows.ResourceDictionary.OnGettingValue(Object key, Object& value, Boolean& canCache)
+   at System.Windows.ResourceDictionary.OnGettingValuePrivate(Object key, Object& value, Boolean& canCache)
+   at System.Windows.ResourceDictionary.GetValueWithoutLock(Object key, Boolean& canCache)
+   at System.Windows.ResourceDictionary.GetValue(Object key, Boolean& canCache)
+   at System.Windows.ResourceDictionary.GetValueWithoutLock(Object key, Boolean& canCache)
+   at System.Windows.ResourceDictionary.GetValue(Object key, Boolean& canCache)
+   at System.Windows.SystemResources.LookupResourceInDictionary(ResourceDictionary dictionary, Object key, Boolean allowDeferredResourceReference, Boolean mustReturnDeferredResourceReference, Boolean& canCache)
+   at System.Windows.SystemResources.FindDictionaryResource(Object key, Type typeKey, ResourceKey resourceKey, Boolean isTraceEnabled, Boolean allowDeferredResourceReference, Boolean mustReturnDeferredResourceReference, Boolean& canCache)
+   at System.Windows.SystemResources.FindResourceInternal(Object key, Boolean allowDeferredResourceReference, Boolean mustReturnDeferredResourceReference)
+   at System.Windows.StyleHelper.GetThemeStyle(FrameworkElement fe, FrameworkContentElement fce)
+   at System.Windows.FrameworkElement.UpdateThemeStyleProperty()
+   at System.Windows.FrameworkElement.OnInitialized(EventArgs e)
+   at System.Windows.FrameworkElement.TryFireInitialized()
+   at MS.Internal.Xaml.Runtime.ClrObjectRuntime.InitializationGuard(XamlType xamlType, Object obj, Boolean begin)
+   --- End of inner exception stack trace ---
+   at System.Windows.Markup.XamlReader.RewrapException(Exception e, IXamlLineInfo lineInfo, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   at System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   at System.Windows.Application.LoadBamlStreamWithSyncInfo(Stream stream, ParserContext pc)
+   at System.Windows.Application.DoStartup()
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+2025-11-02 06:44:23,698 [1] ERROR App - [Application_DispatcherUnhandledException] Unhandled inner exception
+System.TypeInitializationException: The type initializer for 'MahApps.Metro.Behaviours.StylizedBehaviors' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The system cannot find the file specified.
+   at MahApps.Metro.Behaviours.StylizedBehaviors..cctor()
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.RuntimeHelpers._RunClassConstructor(RuntimeType type)
+   at System.Windows.DependencyProperty.FromName(String name, Type ownerType)
+   at System.Windows.Baml2006.Baml2006Reader.WriteTypeConvertedInstance(Int16 converterId, Int32 dataByteSize)
+   at System.Windows.Baml2006.Baml2006Reader.Process_PropertyCustom()
+   at System.Windows.Baml2006.Baml2006Reader.Process_OneBamlRecord()
+   at System.Windows.Baml2006.Baml2006Reader.ReadObject(KeyRecord record)
+   at System.Windows.ResourceDictionary.CreateObject(KeyRecord key)
+   at System.Windows.ResourceDictionary.OnGettingValue(Object key, Object& value, Boolean& canCache)
+   at System.Windows.ResourceDictionary.OnGettingValuePrivate(Object key, Object& value, Boolean& canCache)
+   at System.Windows.ResourceDictionary.GetValueWithoutLock(Object key, Boolean& canCache)
+   at System.Windows.ResourceDictionary.GetValue(Object key, Boolean& canCache)
+   at System.Windows.ResourceDictionary.GetValueWithoutLock(Object key, Boolean& canCache)
+   at System.Windows.ResourceDictionary.GetValue(Object key, Boolean& canCache)
+   at System.Windows.SystemResources.LookupResourceInDictionary(ResourceDictionary dictionary, Object key, Boolean allowDeferredResourceReference, Boolean mustReturnDeferredResourceReference, Boolean& canCache)
+   at System.Windows.SystemResources.FindDictionaryResource(Object key, Type typeKey, ResourceKey resourceKey, Boolean isTraceEnabled, Boolean allowDeferredResourceReference, Boolean mustReturnDeferredResourceReference, Boolean& canCache)
+   at System.Windows.SystemResources.FindResourceInternal(Object key, Boolean allowDeferredResourceReference, Boolean mustReturnDeferredResourceReference)
+   at System.Windows.StyleHelper.GetThemeStyle(FrameworkElement fe, FrameworkContentElement fce)
+   at System.Windows.FrameworkElement.UpdateThemeStyleProperty()
+   at System.Windows.FrameworkElement.OnInitialized(EventArgs e)
+   at System.Windows.FrameworkElement.TryFireInitialized()
+   at MS.Internal.Xaml.Runtime.ClrObjectRuntime.InitializationGuard(XamlType xamlType, Object obj, Boolean begin)

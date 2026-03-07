@@ -1,0 +1,324 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    mc:Ignorable="d"
+    d:DesignHeight="440" d:DesignWidth="627">
+    <Grid x:Name="Root">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+				<Expander Header="Skill Selection">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+						<ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+						<ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+						<ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+					
+					<Label Grid.Row="0" Grid.Column="0" Content="Single Target DPS Skill" Margin="3,5,3,1"
+                           ToolTipService.ToolTip="The skill slot (1-8) to use as main source of single target damage. If set to -1, it will not be used." />
+                    <ComboBox Name="SingleTargetDPSSlotComboBox" Grid.Row="0" Grid.Column="1" Margin="3"
+                              IsEditable="False" />
+							  
+					<Label Grid.Row="1" Grid.Column="0" Content="AoE Skill - 3+ Enemies" Margin="3,5,3,1"
+                           ToolTipService.ToolTip="The skill slot (1-8) to use as main source of aoe damage when 3 or more enemies are present. If set to -1, it will not be used." />
+                    <ComboBox Name="AoESlotComboBox" Grid.Row="1" Grid.Column="1" Margin="3"
+                              IsEditable="False" />		  
+
+                    <Label Grid.Row="2" Grid.Column="0" Content="Curse on Hit Skill" Margin="3,5,3,1"
+                           ToolTipService.ToolTip="The skill slot (1-8) to use which will apply curse on hit to target enemy. If set to -1, it will not be used." />
+                    <ComboBox Name="CurseOnHitSlotComboBox" Grid.Row="2" Grid.Column="1" Margin="3" IsEditable="False" />
+
+                    <Label Grid.Row="3" Grid.Column="0" Content="Movement Skill" Margin="3,5,3,1"
+                           ToolTipService.ToolTip="The skill slot (1-8) to use for movement when outside of max range or if target has proximity shield. If set to -1, it will not be used." />
+                    <ComboBox Name="MovementSlotComboBox" Grid.Row="3" Grid.Column="1" Margin="3" IsEditable="False" />
+					
+					<Label Grid.Row="1" Grid.Column="2" Content="Totem One" Margin="3,5,3,1"
+                           ToolTipService.ToolTip="The skill slot (1-8) to use for your first totem to be used when totem one delay has passed. If set to -1, it will not be used." />
+                    <ComboBox Name="TotemSlotOneComboBox" Grid.Row="1" Grid.Column="3" Margin="3" IsEditable="False" />
+					
+					<Label Grid.Row="2" Grid.Column="2" Content="Totem Two" Margin="3,5,3,1"
+                           ToolTipService.ToolTip="The skill slot (1-8) to use for your second totem to be used when totem two delay has passed. If set to -1, it will not be used." />
+                    <ComboBox Name="TotemSlotTwoComboBox" Grid.Row="2" Grid.Column="3" Margin="3" IsEditable="False" />
+					
+					<Label Grid.Row="3" Grid.Column="2" Content="Movement Distance" Margin="3,5,3,1"
+						   ToolTipService.ToolTip="Minimum distance at which routine will use movement skill instead of walking to get closer to your target. Minimum of 17 for Whirling Blades." />
+					<TextBox Name="MoveSkillRangeTextBox" Grid.Row="3" Grid.Column="3" Margin="3" />
+					
+					<Label Grid.Row="1" Grid.Column="4" Content="Max Totem One" Margin="3,5,3,1"
+                           ToolTipService.ToolTip="Max number of totem one to cast." />
+                    <TextBox Name="TotemOneMaxTextBox" Grid.Row="1" Grid.Column="5" Margin="3" />
+					
+					<Label Grid.Row="2" Grid.Column="4" Content="Max Totem Two" Margin="3,5,3,1"
+                           ToolTipService.ToolTip="Max number of totem two to cast." />
+                    <TextBox Name="TotemTwoMaxTextBox" Grid.Row="2" Grid.Column="5" Margin="3" />
+
+					<Label Grid.Row="1" Grid.Column="6" Content="Totem One Delay" Margin="3,5,3,1"
+						   ToolTipService.ToolTip="The delay between casting totem one in combat." />
+					<TextBox Name="TotemOneDelayTextBox" Grid.Row="1" Grid.Column="7" Margin="3" />
+						
+					<Label Grid.Row="2" Grid.Column="6" Content="Totem Two Delay" Margin="3,5,3,1"
+						   ToolTipService.ToolTip="The delay between casting totem two in combat." />
+					<TextBox Name="TotemTwoDelayTextBox" Grid.Row="2" Grid.Column="7" Margin="3" />
+					
+                </Grid>
+				</Expander>
+				
+				<Expander Header="Attack Ranges">
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+						</Grid.RowDefinitions>
+
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+						</Grid.ColumnDefinitions>
+
+							<Label Grid.Row="0" Grid.Column="0" Content="Max Enemy Scan Range" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="How far away to consider combat targets. Do not set too high, or the bot might get stuck running back and forth trying to get to a target." />
+							<TextBox Name="CombatRangeTextBox" Grid.Row="0" Grid.Column="1" Margin="3" />
+
+							<Label Grid.Row="0" Grid.Column="2" Content="Max Attack Range" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Max range at which you will attack before switching to movement skill." />
+							<TextBox Name="MaxRangeTextBox" Grid.Row="0" Grid.Column="3" Margin="3" />
+							
+							<Label Grid.Row="0" Grid.Column="4" Content="Aoe Radius" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Radius around current target to check for other enemies. We will use aoe skill if there are 3+ enemies within range and have an aoe slot selected in the settings above." />
+							<TextBox Name="AoeRangeTextBox" Grid.Row="0" Grid.Column="5" Margin="3" />
+					</Grid>
+				</Expander>	
+				
+				<Expander Header="CheckBoxes">
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+						</Grid.RowDefinitions>
+
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+						</Grid.ColumnDefinitions>
+						
+							<Label Grid.Row="0" Grid.Column="0" Content="Attack In Place?" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Should the CR always simulate holding shift while attacking?" />
+							<CheckBox Name="AlwaysAttackInPlaceCheckBox" Grid.Row="0" Grid.Column="1" Margin="3" />
+							
+							<Label Grid.Row="1" Grid.Column="0" Content="Using A Channeled Skill?" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Select this box if you are using Bladeflurry, Flameblast, Scorching Ray, or Lightning Tendrils!" />
+							<CheckBox Name="ChannelSkillCheckBox" Grid.Row="1" Grid.Column="1" Margin="3" />
+							
+							<Label Grid.Row="0" Grid.Column="2" Content="Hold Mouse Button?" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Check this box if you are using a skill which you would hold down the mouse button while using rather then clicking." />
+							<CheckBox Name="ChannelCheckBox" Grid.Row="0" Grid.Column="3" Margin="3" />
+							
+							<Label Grid.Row="1" Grid.Column="2" Content="Dont AoE Uniques" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Should the CR skip using an AoE skill when a unique enemy is near?" />
+							<CheckBox Name="DontAoEUniquesCheckBox" Grid.Row="1" Grid.Column="3" Margin="3" />
+
+							<Label Grid.Row="0" Grid.Column="4" Content="Auras From Items?" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Should the CR use auras granted by items rather than skill gems?" />
+							<CheckBox Name="EnableAurasFromItemsCheckBox" Grid.Row="0" Grid.Column="5" Margin="3" />
+
+							<Label Grid.Row="1" Grid.Column="4" Content="Debug Auras In Log?" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Should the CR output debug information on why auras aren't being cast?" />
+							<CheckBox Name="DebugAurasCheckBox" Grid.Row="1" Grid.Column="5" Margin="3" />
+
+							<Label Grid.Row="0" Grid.Column="6" Content="Leave Frame?" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Leave this unchecked unless instructed otherwise." />
+							<CheckBox Name="LeaveFrameCheckBox" Grid.Row="0" Grid.Column="7" Margin="3" />
+
+							<Label Grid.Row="1" Grid.Column="6" Content="Skip Shrines?" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Should we skip shrines?" />
+							<CheckBox Name="SkipShrinesCheckBox" Grid.Row="1" Grid.Column="7" Margin="3" />
+							
+							<Label Grid.Row="0" Grid.Column="8" Content="AutoCast Vaal Skills?" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Should the CR auto-cast Vaal skills when usable?" />
+							<CheckBox Name="AutoCastVaalSkillsCheckBox" Grid.Row="0" Grid.Column="9" Margin="3" />
+					
+							<Label Grid.Row="1" Grid.Column="8" Content="Safe Movement?" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="If checked CR will choose a point halfway between you and your target for movement rather then running directly to them. **Ranged classes only!**" />
+							<CheckBox Name="RangedCheckBox" Grid.Row="1" Grid.Column="9" Margin="3" />
+					</Grid>
+				</Expander>	
+				
+				<Expander Header="Delays and Max Charges">
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+						</Grid.RowDefinitions>
+
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+						</Grid.ColumnDefinitions>
+
+						<Label Grid.Row="0" Grid.Column="0" Content="FlameBlast Charges" Margin="3,5,3,1"
+							   ToolTipService.ToolTip="How many flameblast charges should the CR build up before releasing." />
+						<TextBox Name="MaxFlameBlastChargesTextBox" Grid.Row="0" Grid.Column="1" Margin="3" />
+
+						<Label Grid.Row="0" Grid.Column="2" Content="MoltenShell Delay" Margin="3,5,3,1"
+							   ToolTipService.ToolTip="How long should the CR wait after casting molten shell before using it again." />
+						<TextBox Name="MoltenShellDelayMsTextBox" Grid.Row="0" Grid.Column="3" Margin="3" />
+						
+						<Label Grid.Row="0" Grid.Column="4" Content="Offering Delay" Margin="3,5,3,1"
+							   ToolTipService.ToolTip="How long should the CR wait after casting an offering skill before using it again." />
+						<TextBox Name="FleshOfferingDelayMsTextBox" Grid.Row="0" Grid.Column="5" Margin="3" />
+						
+						<Label Grid.Row="0" Grid.Column="6" Content="Summon Skeleton Delay" Margin="3,5,3,1"
+							   ToolTipService.ToolTip="How long should the CR wait after casting summon skeletons before using it again." />
+						<TextBox Name="SummonSkeletonDelayMsTextBox" Grid.Row="0" Grid.Column="7" Margin="3" />
+
+						<Label Grid.Row="1" Grid.Column="2" Content="Trap Delay" Margin="3,5,3,1"
+							   ToolTipService.ToolTip="How long should the CR wait after casting a trap skill before using another." />
+						<TextBox Name="TrapDelayMsTextBox" Grid.Row="1" Grid.Column="3" Margin="3" />
+
+						<Label Grid.Row="1" Grid.Column="4" Content="Mine Delay" Margin="3,5,3,1"
+							   ToolTipService.ToolTip="How long should the CR wait after casting a mine skill before using another." />
+						<TextBox Name="MineDelayMsTextBox" Grid.Row="1" Grid.Column="5" Margin="3" />
+						
+					</Grid>
+				</Expander>
+				
+				<Expander Header="Spectres">
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+						</Grid.RowDefinitions>
+
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+						</Grid.ColumnDefinitions>
+							
+							<Label Grid.Row="0" Grid.Column="0" Content="Desecrate For Spectres?" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Should the CR use desecrate when out of combat to summon your spectres?" />
+							<CheckBox Name="DesecrateForSpectresCheckBox" Grid.Row="0" Grid.Column="1" Margin="3" />
+
+							<Label Grid.Row="0" Grid.Column="2" Content="Specific Spectre Target?" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Should the CR use a specific target for spectres? If selected you must input your target in the settings below." />
+							<CheckBox Name="SummonSpectreTargetCheckBox" Grid.Row="0" Grid.Column="3" Margin="3" />
+
+							<Label Grid.Row="0" Grid.Column="4" Content="Spectre Target Name?" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Name of the target you wish to use for raise spectres. Must be typed exactly correct." />
+							<TextBox Name="SpectreTargetTextBox" Grid.Row="0" Grid.Column="5" Margin="3" />
+					</Grid>
+				</Expander>
+				
+				<Expander Header="Chicken + In Combat Looting + Clasped Hands - Subscriber Only">
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+						</Grid.RowDefinitions>
+
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+						</Grid.ColumnDefinitions>    
+					
+							<Label Grid.Row="0" Grid.Column="0" Content="Enemy Range" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Range to scan for enemies before looting." />
+							<TextBox Name="MobsNearForLootRangeTextBox" Grid.Row="0" Grid.Column="1" Margin="3" />
+							
+							<Label Grid.Row="0" Grid.Column="2" Content="Item Range" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Range to scan for items to loot." />
+							<TextBox Name="LootDistanceCheckTextBox" Grid.Row="0" Grid.Column="3" Margin="3" />
+							
+							<Label Grid.Row="0" Grid.Column="4" Content="Clasped Range" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Range to scan for clasped hands to interact with." />
+							<TextBox Name="ClaspedDistanceCheckTextBox" Grid.Row="0" Grid.Column="5" Margin="3" />
+							
+							<Label Grid.Row="0" Grid.Column="6" Content="Loot Health %" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Minimum health at which you will perform combat looting or clasped hand interaction." />
+							<TextBox Name="LootHealthTextBox" Grid.Row="0" Grid.Column="7" Margin="3" />
+							
+							<Label Grid.Row="1" Grid.Column="6" Content="Scan Health?" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Should the CR include a health check for chicken, before looting or clasped hand interaction?" />
+							<CheckBox Name="CheckForHealthCheckBox" Grid.Row="1" Grid.Column="7" Margin="3" />
+							
+							<Label Grid.Row="0" Grid.Column="8" Content="Loot ES %" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Minimum energy shield at which you will perform combat looting or clasped hand interaction." />
+							<TextBox Name="LootESTextBox" Grid.Row="0" Grid.Column="9" Margin="3" />
+							
+							<Label Grid.Row="1" Grid.Column="8" Content="Scan ES?" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Should the CR include a energy shield check for chicken, before looting or clasped hand interaction?" />
+							<CheckBox Name="CheckForESCheckBox" Grid.Row="1" Grid.Column="9" Margin="3" />
+							
+							<Label Grid.Row="0" Grid.Column="10" Content="Chicken %" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="Percent health and/or energy shield at which bot will chicken to town. Uses the option you have chosen to scan, can choose one both or neither." />
+							<TextBox Name="ChickenPercentTextBox" Grid.Row="0" Grid.Column="11" Margin="3" />
+					</Grid>
+				</Expander>			
+				<Expander Header="Skill Blacklist">
+					<Grid>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+						</Grid.RowDefinitions>
+
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto" />
+							<ColumnDefinition Width="Auto" />
+						</Grid.ColumnDefinitions>
+
+							<Label Grid.Row="0" Grid.Column="0" Content="Blacklisted Skill Ids?" Margin="3,5,3,1"
+								   ToolTipService.ToolTip="A list of aura ids not to cast. Comma or space separated." />
+							<TextBox Name="BlacklistedSkillIdsTextBox" Grid.Row="0" Grid.Column="1" Margin="3" />
+					</Grid>
+				</Expander>	
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

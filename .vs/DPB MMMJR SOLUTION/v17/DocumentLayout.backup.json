@@ -1,0 +1,468 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|c:\\users\\mmmjr\\desktop\\marcelo\\poe1-code-elder-and-sextantbot\\mmmjrbot\\mapperbot\\openmaptask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\mapperbot\\openmaptask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\farmingtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\farmingtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\mmmjrbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\mmmjrbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\mapperbot\\killbosstask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\mapperbot\\killbosstask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\mmmjrgui.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\mmmjrgui.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\mmmjrbotsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\mmmjrbotsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8EC895A-75F1-4A71-92D7-73975D9338A4}|Loader\\Loader.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\loader\\pluginloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8EC895A-75F1-4A71-92D7-73975D9338A4}|Loader\\Loader.csproj|solutionrelative:loader\\pluginloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\verifysu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\verifysu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\mapperbot\\takemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\mapperbot\\takemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\lib\\global\\combatareacache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\lib\\global\\combatareacache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\lib\\commontasks\\lootitemtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\lib\\commontasks\\lootitemtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\lib\\commontasks\\lootitemtaskstatic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\lib\\commontasks\\lootitemtaskstatic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\lib\\playeraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\lib\\playeraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\lib\\inventories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\lib\\inventories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\mapperbot\\levelgemstaskstatic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\mapperbot\\levelgemstaskstatic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\mmmjrroutine\\mmmjrroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\mmmjrroutine\\mmmjrroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\lib\\commontasks\\stashtaskstatic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\lib\\commontasks\\stashtaskstatic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\class\\mapperroutineskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\class\\mapperroutineskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\mapperbot\\mapexplorationtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\mapperbot\\mapexplorationtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\lib\\globallog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\lib\\globallog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\lib\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\lib\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\lib\\wait.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\lib\\wait.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\defenseandflasktask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\defenseandflasktask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\class\\flasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\class\\flasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\class\\defensiveskillsclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\class\\defensiveskillsclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\lib\\global\\complexexplorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\lib\\global\\complexexplorer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\lib\\commontasks\\transitiontriggertaskstatic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\lib\\commontasks\\transitiontriggertaskstatic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\mmmjrbot\\lib\\commontasks\\stashtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F18A06B-6517-4AE1-84BF-B7F092B544D2}|MmmjrBot\\MmmjrBot.csproj|solutionrelative:mmmjrbot\\lib\\commontasks\\stashtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MmmjrBot.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MmmjrBot.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\MmmjrBot.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MmmjrBot.cs",
+              "RelativeToolTip": "MmmjrBot\\MmmjrBot.cs",
+              "ViewState": "AgIAAOEAAAAAAAAAAAAowBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PlayerAction.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\PlayerAction.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\Lib\\PlayerAction.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\PlayerAction.cs",
+              "RelativeToolTip": "MmmjrBot\\Lib\\PlayerAction.cs",
+              "ViewState": "AgIAAAUCAAAAAAAAAAAvwBsCAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CombatAreaCache.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\Global\\CombatAreaCache.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\Lib\\Global\\CombatAreaCache.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\Global\\CombatAreaCache.cs",
+              "RelativeToolTip": "MmmjrBot\\Lib\\Global\\CombatAreaCache.cs",
+              "ViewState": "AgIAAEcBAAAAAAAAAADgv1sBAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LootItemTask.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\CommonTasks\\LootItemTask.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\Lib\\CommonTasks\\LootItemTask.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\CommonTasks\\LootItemTask.cs",
+              "RelativeToolTip": "MmmjrBot\\Lib\\CommonTasks\\LootItemTask.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAEwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MmmjrBotSettings.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MmmjrBotSettings.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\MmmjrBotSettings.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MmmjrBotSettings.cs",
+              "RelativeToolTip": "MmmjrBot\\MmmjrBotSettings.cs",
+              "ViewState": "AgIAAFwNAAAAAAAAAAA6wH0NAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MmmjrGUI.xaml",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MmmjrGUI.xaml",
+              "RelativeDocumentMoniker": "MmmjrBot\\MmmjrGUI.xaml",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MmmjrGUI.xaml",
+              "RelativeToolTip": "MmmjrBot\\MmmjrGUI.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-03T05:11:54.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "KillBossTask.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MapperBot\\KillBossTask.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\MapperBot\\KillBossTask.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MapperBot\\KillBossTask.cs",
+              "RelativeToolTip": "MmmjrBot\\MapperBot\\KillBossTask.cs",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAiwN8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FarmingTask.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\FarmingTask.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\FarmingTask.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\FarmingTask.cs",
+              "RelativeToolTip": "MmmjrBot\\FarmingTask.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAAALgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PluginLoader.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\Loader\\PluginLoader.cs",
+              "RelativeDocumentMoniker": "Loader\\PluginLoader.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\Loader\\PluginLoader.cs",
+              "RelativeToolTip": "Loader\\PluginLoader.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T00:17:28.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VerifySu.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\VerifySu.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\VerifySu.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\VerifySu.cs",
+              "RelativeToolTip": "MmmjrBot\\VerifySu.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAwwDwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T05:07:13.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OpenMapTask.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MapperBot\\OpenMapTask.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\MapperBot\\OpenMapTask.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MapperBot\\OpenMapTask.cs",
+              "RelativeToolTip": "MmmjrBot\\MapperBot\\OpenMapTask.cs",
+              "ViewState": "AgIAAD8BAAAAAAAAAAAQwGsBAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T05:00:52.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LootItemTaskStatic.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\CommonTasks\\LootItemTaskStatic.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\Lib\\CommonTasks\\LootItemTaskStatic.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\CommonTasks\\LootItemTaskStatic.cs",
+              "RelativeToolTip": "MmmjrBot\\Lib\\CommonTasks\\LootItemTaskStatic.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAADgvywAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Inventories.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\Inventories.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\Lib\\Inventories.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\Inventories.cs",
+              "RelativeToolTip": "MmmjrBot\\Lib\\Inventories.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAewC4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LevelGemsTaskStatic.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MapperBot\\LevelGemsTaskStatic.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\MapperBot\\LevelGemsTaskStatic.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MapperBot\\LevelGemsTaskStatic.cs",
+              "RelativeToolTip": "MmmjrBot\\MapperBot\\LevelGemsTaskStatic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T05:13:32.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TakeMap.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MapperBot\\TakeMap.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\MapperBot\\TakeMap.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MapperBot\\TakeMap.cs",
+              "RelativeToolTip": "MmmjrBot\\MapperBot\\TakeMap.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAwLAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T04:51:12.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MmmjrRoutine.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MmmjrRoutine\\MmmjrRoutine.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\MmmjrRoutine\\MmmjrRoutine.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MmmjrRoutine\\MmmjrRoutine.cs",
+              "RelativeToolTip": "MmmjrBot\\MmmjrRoutine\\MmmjrRoutine.cs",
+              "ViewState": "AgIAAOkCAAAAAAAAAAAAABQCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "StashTaskStatic.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\CommonTasks\\StashTaskStatic.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\Lib\\CommonTasks\\StashTaskStatic.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\CommonTasks\\StashTaskStatic.cs",
+              "RelativeToolTip": "MmmjrBot\\Lib\\CommonTasks\\StashTaskStatic.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAASwI4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MapperRoutineSkill.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Class\\MapperRoutineSkill.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\Class\\MapperRoutineSkill.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Class\\MapperRoutineSkill.cs",
+              "RelativeToolTip": "MmmjrBot\\Class\\MapperRoutineSkill.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAIAywBYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T20:28:39.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GlobalLog.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\GlobalLog.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\Lib\\GlobalLog.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\GlobalLog.cs",
+              "RelativeToolTip": "MmmjrBot\\Lib\\GlobalLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T20:25:37.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MapExplorationTask.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MapperBot\\MapExplorationTask.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\MapperBot\\MapExplorationTask.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\MapperBot\\MapExplorationTask.cs",
+              "RelativeToolTip": "MmmjrBot\\MapperBot\\MapExplorationTask.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAnwCYAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T21:18:59.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Wait.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\Wait.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\Lib\\Wait.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\Wait.cs",
+              "RelativeToolTip": "MmmjrBot\\Lib\\Wait.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAIAwwFYAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Settings.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\Settings.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\Lib\\Settings.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\Settings.cs",
+              "RelativeToolTip": "MmmjrBot\\Lib\\Settings.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAswMYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DefensiveSkillsClass.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Class\\DefensiveSkillsClass.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\Class\\DefensiveSkillsClass.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Class\\DefensiveSkillsClass.cs",
+              "RelativeToolTip": "MmmjrBot\\Class\\DefensiveSkillsClass.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAqwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Flasks.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Class\\Flasks.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\Class\\Flasks.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Class\\Flasks.cs",
+              "RelativeToolTip": "MmmjrBot\\Class\\Flasks.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DefenseAndFlaskTask.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\DefenseAndFlaskTask.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\DefenseAndFlaskTask.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\DefenseAndFlaskTask.cs",
+              "RelativeToolTip": "MmmjrBot\\DefenseAndFlaskTask.cs",
+              "ViewState": "AQIAAM4AAAAAAAAAAAAIwN4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ComplexExplorer.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\Global\\ComplexExplorer.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\Lib\\Global\\ComplexExplorer.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\Global\\ComplexExplorer.cs",
+              "RelativeToolTip": "MmmjrBot\\Lib\\Global\\ComplexExplorer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TransitionTriggerTaskStatic.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\CommonTasks\\TransitionTriggerTaskStatic.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\Lib\\CommonTasks\\TransitionTriggerTaskStatic.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\CommonTasks\\TransitionTriggerTaskStatic.cs",
+              "RelativeToolTip": "MmmjrBot\\Lib\\CommonTasks\\TransitionTriggerTaskStatic.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "StashTask.cs",
+              "DocumentMoniker": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\CommonTasks\\StashTask.cs",
+              "RelativeDocumentMoniker": "MmmjrBot\\Lib\\CommonTasks\\StashTask.cs",
+              "ToolTip": "C:\\Users\\mmmjr\\Desktop\\Marcelo\\POE1-Code-Elder-and-SextantBot\\MmmjrBot\\Lib\\CommonTasks\\StashTask.cs",
+              "RelativeToolTip": "MmmjrBot\\Lib\\CommonTasks\\StashTask.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T19:44:00.915Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "AssemblyName": "Archnemesis",
+  "FileList": [
+    "Archnemesis.cs",
+    "ArchnemesisSettings.cs",
+    "Models/ArchnemesisMod.cs",
+    "Models/Map.cs",
+    "Models/Entity.cs",
+    "Gui.baml",
+    "Gui.g.cs",
+    "Gui.xaml",
+    "Gui.xaml.cs"
+  ],
+  "Dependencies": ["Default"],
+  "References": []
+}

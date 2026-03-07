@@ -1,0 +1,102 @@
+2023-05-30 15:47:12,946 [1] INFO  App - DreamPoeBot Version: 0.3.21.57
+Path: C:\Users\<Username>\Desktop\poe\MmmjrBot\MmmjrBot\bin\Debug\<ExeName>
+Arguments: C:\Users\Administrator\Desktop\poe\MmmjrBot\MmmjrBot\bin\Debug\DreamPoeBot.exe C:\Users\Administrator\Desktop\poe\MmmjrBot\MmmjrBot\bin\Debug\bot.rar
+
+OS Name: Microsoft Windows 10 Pro
+OS Version: 10.0.18363
+OS Architecture: 64 bits
+InstalledUICulture: en-US [English (United States)]
+CurrentUICulture: pt-BR [Portuguese (Brazil)]
+CurrentCulture: pt-BR [Portuguese (Brazil)]
+
+2023-05-30 15:47:12,967 [1] INFO  App - Now setting up JitProfiles...
+2023-05-30 15:47:12,968 [1] INFO  App - JitProfiles successfully setup!
+2023-05-30 15:47:12,974 [1] INFO  App - Now checking prerequisites...
+2023-05-30 15:47:12,974 [1] INFO  App - Prerequisite check complete!
+2023-05-30 15:47:13,091 [1] ERROR App - [Application_DispatcherUnhandledException] Unhandled exception
+System.Windows.Markup.XamlParseException: A inicialização de 'DreamPoeBot.DreamPoe.MainWindow' iniciou uma exceção. ---> System.TypeInitializationException: O inicializador de tipo de 'MahApps.Metro.Behaviours.StylizedBehaviors' acionou uma exceção. ---> System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+   em MahApps.Metro.Behaviours.StylizedBehaviors..cctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Runtime.CompilerServices.RuntimeHelpers._RunClassConstructor(RuntimeType type)
+   em System.Windows.DependencyProperty.FromName(String name, Type ownerType)
+   em System.Windows.Baml2006.Baml2006Reader.WriteTypeConvertedInstance(Int16 converterId, Int32 dataByteSize)
+   em System.Windows.Baml2006.Baml2006Reader.Process_PropertyCustom()
+   em System.Windows.Baml2006.Baml2006Reader.Process_OneBamlRecord()
+   em System.Windows.Baml2006.Baml2006Reader.ReadObject(KeyRecord record)
+   em System.Windows.ResourceDictionary.CreateObject(KeyRecord key)
+   em System.Windows.ResourceDictionary.OnGettingValue(Object key, Object& value, Boolean& canCache)
+   em System.Windows.ResourceDictionary.OnGettingValuePrivate(Object key, Object& value, Boolean& canCache)
+   em System.Windows.ResourceDictionary.GetValueWithoutLock(Object key, Boolean& canCache)
+   em System.Windows.ResourceDictionary.GetValue(Object key, Boolean& canCache)
+   em System.Windows.ResourceDictionary.GetValueWithoutLock(Object key, Boolean& canCache)
+   em System.Windows.ResourceDictionary.GetValue(Object key, Boolean& canCache)
+   em System.Windows.SystemResources.LookupResourceInDictionary(ResourceDictionary dictionary, Object key, Boolean allowDeferredResourceReference, Boolean mustReturnDeferredResourceReference, Boolean& canCache)
+   em System.Windows.SystemResources.FindDictionaryResource(Object key, Type typeKey, ResourceKey resourceKey, Boolean isTraceEnabled, Boolean allowDeferredResourceReference, Boolean mustReturnDeferredResourceReference, Boolean& canCache)
+   em System.Windows.SystemResources.FindResourceInternal(Object key, Boolean allowDeferredResourceReference, Boolean mustReturnDeferredResourceReference)
+   em System.Windows.StyleHelper.GetThemeStyle(FrameworkElement fe, FrameworkContentElement fce)
+   em System.Windows.FrameworkElement.UpdateThemeStyleProperty()
+   em System.Windows.FrameworkElement.OnInitialized(EventArgs e)
+   em System.Windows.FrameworkElement.TryFireInitialized()
+   em MS.Internal.Xaml.Runtime.ClrObjectRuntime.InitializationGuard(XamlType xamlType, Object obj, Boolean begin)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Windows.Markup.XamlReader.RewrapException(Exception e, IXamlLineInfo lineInfo, Uri baseUri)
+   em System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   em System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   em System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   em System.Windows.Application.LoadBamlStreamWithSyncInfo(Stream stream, ParserContext pc)
+   em System.Windows.Application.DoStartup()
+   em System.Windows.Application.<.ctor>b__1_0(Object unused)
+   em System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   em System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+2023-05-30 15:47:13,097 [1] ERROR App - [Application_DispatcherUnhandledException] Unhandled inner exception
+System.TypeInitializationException: O inicializador de tipo de 'MahApps.Metro.Behaviours.StylizedBehaviors' acionou uma exceção. ---> System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+   em MahApps.Metro.Behaviours.StylizedBehaviors..cctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Runtime.CompilerServices.RuntimeHelpers._RunClassConstructor(RuntimeType type)
+   em System.Windows.DependencyProperty.FromName(String name, Type ownerType)
+   em System.Windows.Baml2006.Baml2006Reader.WriteTypeConvertedInstance(Int16 converterId, Int32 dataByteSize)
+   em System.Windows.Baml2006.Baml2006Reader.Process_PropertyCustom()
+   em System.Windows.Baml2006.Baml2006Reader.Process_OneBamlRecord()
+   em System.Windows.Baml2006.Baml2006Reader.ReadObject(KeyRecord record)
+   em System.Windows.ResourceDictionary.CreateObject(KeyRecord key)
+   em System.Windows.ResourceDictionary.OnGettingValue(Object key, Object& value, Boolean& canCache)
+   em System.Windows.ResourceDictionary.OnGettingValuePrivate(Object key, Object& value, Boolean& canCache)
+   em System.Windows.ResourceDictionary.GetValueWithoutLock(Object key, Boolean& canCache)
+   em System.Windows.ResourceDictionary.GetValue(Object key, Boolean& canCache)
+   em System.Windows.ResourceDictionary.GetValueWithoutLock(Object key, Boolean& canCache)
+   em System.Windows.ResourceDictionary.GetValue(Object key, Boolean& canCache)
+   em System.Windows.SystemResources.LookupResourceInDictionary(ResourceDictionary dictionary, Object key, Boolean allowDeferredResourceReference, Boolean mustReturnDeferredResourceReference, Boolean& canCache)
+   em System.Windows.SystemResources.FindDictionaryResource(Object key, Type typeKey, ResourceKey resourceKey, Boolean isTraceEnabled, Boolean allowDeferredResourceReference, Boolean mustReturnDeferredResourceReference, Boolean& canCache)
+   em System.Windows.SystemResources.FindResourceInternal(Object key, Boolean allowDeferredResourceReference, Boolean mustReturnDeferredResourceReference)
+   em System.Windows.StyleHelper.GetThemeStyle(FrameworkElement fe, FrameworkContentElement fce)
+   em System.Windows.FrameworkElement.UpdateThemeStyleProperty()
+   em System.Windows.FrameworkElement.OnInitialized(EventArgs e)
+   em System.Windows.FrameworkElement.TryFireInitialized()
+   em MS.Internal.Xaml.Runtime.ClrObjectRuntime.InitializationGuard(XamlType xamlType, Object obj, Boolean begin)
+2023-05-30 23:24:54,107 [1] ERROR MainWindow - An exception occurred.
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em DreamPoeBot.DreamPoe.MainWindow.method_21(Object sender, CancelEventArgs e)
+2023-05-30 23:24:54,207 [1] ERROR Configuration - [SaveAll] An exception occurred when saving GlobalSettings: 
+System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.IO.FileLoadException: Não foi possível carregar arquivo ou assembly 'Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' ou uma de suas dependências. A definição do manifesto do assembly localizado não corresponde à referência do assembly. (Exceção de HRESULT: 0x80131040)
+   em DreamPoeBot.Loki.Common.JsonSettings.SaveAs(String file)
+   em DreamPoeBot.Loki.GlobalSettings.set_HumanLikeMouseMaxStep(Int32 value)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   em System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   em System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   em System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   em DreamPoeBot.Loki.Common.JsonSettings.LoadFrom(String file)
+   em DreamPoeBot.Loki.Common.JsonSettings..ctor(String path)
+   em DreamPoeBot.Loki.GlobalSettings..ctor()
+   em DreamPoeBot.Loki.GlobalSettings.get_Instance()
+   em DreamPoeBot.Loki.Configuration.SaveAll()
+2023-05-30 23:24:54,219 [1] INFO  BotManager - [BotManager] MsBetweenTicks = 80
+2023-05-30 23:24:54,228 [1] ERROR App - [Application_DispatcherUnhandledException] Unhandled exception
+System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em DreamPoeBot.Hooks.Hooking.Deinitialize()
+   em DreamPoeBot.App.OnExit(ExitEventArgs e)
+   em System.Windows.Application.DoShutdown()
+   em System.Windows.Application.ShutdownImpl()
+   em System.Windows.Application.ShutdownCallback(Object arg)
+   em System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   em System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
