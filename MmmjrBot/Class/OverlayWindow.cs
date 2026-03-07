@@ -147,7 +147,6 @@ namespace MmmjrBot.Class
 				.ToString();
 
             var botInfoText = new StringBuilder()
-                .Append(string.Format("{0,-16}  {1,-10}  {2,5}", "FollowBot: ", $"{MmmjrBotSettings.Instance.EnableFollowBot}","")).AppendLine()
                 .Append(string.Format("{0,-16}  {1,-10}  {2,5}", "SextantBot: ", $"{MmmjrBotSettings.Instance.EnableSextantBot}", "")).AppendLine()
                 .Append(string.Format("{0,-16}  {1,-10}  {2,5}", "Area Death Count: ", $"{CombatAreaCache.Current.DeathCount}", "")).AppendLine()
 				.ToString();

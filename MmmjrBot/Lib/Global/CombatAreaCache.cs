@@ -183,13 +183,6 @@ namespace MmmjrBot.Lib.Global
         {
             Current.Explorer.Tick();
 
-            if(MmmjrBotSettings.Instance.EnableFollowBot)
-            {
-                if (MmmjrBotSettings.Instance.ShouldLoot && ItemScanInterval.Elapsed)
-                {
-                    WorldItemScan();
-                }
-            }
 
             if (MmmjrBotSettings.Instance.EnableFarmingBot)
             {

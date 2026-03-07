@@ -6,7 +6,6 @@ using DreamPoeBot.Loki.Game;
 using DreamPoeBot.Loki.Game.Objects;
 using DreamPoeBot.Loki.RemoteMemoryObjects;
 using MmmjrBot.Class;
-using MmmjrBot.Helpers;
 using MmmjrBot.Lib;
 using FlaskHud = DreamPoeBot.Loki.Game.LokiPoe.InGameState.QuickFlaskHud;
 
@@ -177,24 +176,12 @@ namespace MmmjrBot
             Skill skill = skills.FirstOrDefault(s => s.Name == skillClass.Name);
             if (skill != null && skill.CanUse())
             {
-                if (skillClass.CastOnLeader)
-                {
-                    var leader = FollowBot.Leader;
-                    if (leader != null && leader.Distance < 50)
-                    {
-                        LokiPoe.InGameState.SkillBarHud.UseOn(skill.Slot, false, FollowBot.Leader, false);
-                        skillClass.Casted();
-                    }
-                }
-                else
-                {
-                    LokiPoe.InGameState.SkillBarHud.Use(skill.Slot, false, false);
-                    skillClass.Casted();
-                }
+                LokiPoe.InGameState.SkillBarHud.Use(skill.Slot, false, false);
+                skillClass.Casted();
             }
         }
 
-        private static bool UseFlask(Item thisflask, int slot)
+        public static bool UseFlask(Item thisflask, int slot)
         {
             if (!thisflask.CanUse) return false;
             //if (thisflask.Name == FlaskNames.Quicksilver)

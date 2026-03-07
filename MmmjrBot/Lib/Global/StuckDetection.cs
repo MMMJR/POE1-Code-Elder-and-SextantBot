@@ -78,8 +78,6 @@ namespace MmmjrBot.Lib.Global
             {
                 ++_smallStuckCount;
 
-                if (_smallStuckCount >= 1)
-                    HandleBlockingChestsTask.Enabled = true;
 
                 if (_smallStuckCount >= 5)
                     GlobalLog.Debug($"[StuckDetection] Small range stuck count: {_smallStuckCount}");

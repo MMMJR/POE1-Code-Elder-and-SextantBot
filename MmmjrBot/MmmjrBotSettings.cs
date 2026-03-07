@@ -15,7 +15,6 @@ using MmmjrBot.Class;
 using Newtonsoft.Json;
 using System.Globalization;
 using System.Windows.Data;
-using MmmjrBot.QuestBot;
 using System.Runtime.Serialization;
 
 namespace MmmjrBot
@@ -132,26 +131,6 @@ namespace MmmjrBot
         public bool TrackMob { get; set; }
         public bool UseHideout { get; set; }
 
-        public ObservableCollection<GrindingRule> GrindingRules { get; set; } = new ObservableCollection<GrindingRule>();
-
-        [JsonIgnore]
-        public static List<Quest> QuestList
-        {
-            get
-            {
-                var list = new List<Quest>();
-                foreach (var quest in Quests.All)
-                {
-                    if (quest == Quests.RibbonSpool || //completes along with Fiery Dust
-                        quest == Quests.SwigOfHope || //early decanter messes this up
-                        quest == Quests.EndToHunger) //epilogue one should be used
-                        continue;
-
-                    list.Add(quest);
-                }
-                return list;
-            }
-        }
 
         [JsonIgnore]
         public static List<Area> AreaList
@@ -180,13 +159,6 @@ namespace MmmjrBot
                 }
                 return list;
             }
-        }
-
-        public class GrindingRule
-        {
-            public Quest Quest { get; set; } = Quests.EnemyAtTheGate;
-            public int LevelCap { get; set; } = 100;
-            public ObservableCollection<GrindingArea> Areas { get; set; } = new ObservableCollection<GrindingArea>();
         }
 
         public class GrindingArea

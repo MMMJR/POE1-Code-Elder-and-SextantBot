@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using DreamPoeBot.Loki.Bot;
 using DreamPoeBot.Loki.Game;
-using MmmjrBot.Helpers;
 using MmmjrBot.Class;
 using MmmjrBot.Lib;
 using chatPanel = DreamPoeBot.Loki.Game.LokiPoe.InGameState.ChatPanel;
@@ -151,61 +150,14 @@ namespace MmmjrBot.Class
                 case chatPanel.MessageType.Global:
                     break;
                 case chatPanel.MessageType.Party:
-                    ProcessPartyMessage(newmessage);
                     break;
                 case chatPanel.MessageType.Whisper:
-                    ProcessPartyMessage(newmessage);
                     break;
                 case chatPanel.MessageType.Trade:
                     break;
                 case chatPanel.MessageType.Guild:
                     break;
             }
-        }
-
-        private static async Task ProcessPartyMessage(LokiPoe.InGameState.ChatPanel.ChatEntry newmessage)
-        {
-            if (FollowBot._leaderPartyEntry == null || FollowBot._leaderPartyEntry.PlayerEntry == null) return;
-            var leadername = FollowBot._leaderPartyEntry.PlayerEntry.Name;
-            if (string.IsNullOrEmpty(leadername)) return;
-            
-            if (newmessage.RemoteName != leadername) return;
-            var start = newmessage.Message.IndexOf($"{leadername}:", StringComparison.InvariantCulture) + $"{leadername}:".Length + 1;
-            var end = newmessage.Message.Length - start;
-            var command = newmessage.Message.Substring(start, end);
-
-            GlobalLog.Warn($"Recieved Message: {newmessage.Message}, Command: {command}");
-
-            if (command == MmmjrBotSettings.Instance.OpenTownPortalChatCommand)
-                DefenseAndFlaskStatic.ShouldOpenPortal = true;
-
-            if (command == MmmjrBotSettings.Instance.TeleportToLeaderChatCommand)
-                DefenseAndFlaskStatic.ShouldTeleport = true;
-
-            if (command == MmmjrBotSettings.Instance.StartFollowChatCommand)
-                MmmjrBotSettings.Instance.ShouldFollow = true;
-            if (command == MmmjrBotSettings.Instance.StopFollowChatCommand)
-                MmmjrBotSettings.Instance.ShouldFollow = false;
-
-            if (command == MmmjrBotSettings.Instance.StartAttackChatCommand)
-                MmmjrBotSettings.Instance.ShouldKill = true;
-            if (command == MmmjrBotSettings.Instance.StopAttackChatCommand)
-                MmmjrBotSettings.Instance.ShouldKill = false;
-
-            if (command == MmmjrBotSettings.Instance.StartLootChatCommand)
-                MmmjrBotSettings.Instance.ShouldLoot = true;
-            if (command == MmmjrBotSettings.Instance.StopLootChatCommand)
-                MmmjrBotSettings.Instance.ShouldLoot = false;
-
-            if (command == MmmjrBotSettings.Instance.StartAutoTeleportChatCommand)
-                MmmjrBotSettings.Instance.DontPortOutofMap = false;
-            if (command == MmmjrBotSettings.Instance.StopAutoTeleportChatCommand)
-                MmmjrBotSettings.Instance.DontPortOutofMap = true;
-
-            if (command == MmmjrBotSettings.Instance.StartSentinelChatCommand)
-                MmmjrBotSettings.Instance.UseStalkerSentinel = true;
-            if (command == MmmjrBotSettings.Instance.StopSentinelChatCommand)
-                MmmjrBotSettings.Instance.UseStalkerSentinel = false;
         }
     }
 }

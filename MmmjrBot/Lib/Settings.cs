@@ -247,7 +247,6 @@ namespace MmmjrBot.Lib
                     if (value == _tabs) return;
                     _tabs = value;
                     FillTabList();
-                    StashTask.RequestInvalidTabCheck();
                 }
             }
 

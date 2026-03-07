@@ -8,7 +8,6 @@ namespace MmmjrBot.Lib.CommonTasks
     {
         public static async Task<bool> Run(int leashRange)
         {
-            if (!MmmjrBotSettings.Instance.ShouldKill) return false;
             if (!World.CurrentArea.IsCombatArea)
                 return false;
 

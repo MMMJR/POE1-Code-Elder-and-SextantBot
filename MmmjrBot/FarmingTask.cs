@@ -371,7 +371,7 @@ namespace MmmjrBot
                             for (int x = 1; x < 5; x++)
                             {
                                 var thisflask = LokiPoe.InGameState.QuickFlaskHud.InventoryControl.Inventory.Items.FirstOrDefault(f => f.LocationTopLeft.X == x - 1);
-                                DefenseAndFlask.UseFlask(thisflask, x);
+                                DefenseAndFlaskStatic.UseFlask(thisflask, x);
                                 await Wait.SleepSafe(40);
                             }
 

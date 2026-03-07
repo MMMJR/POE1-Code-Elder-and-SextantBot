@@ -8,7 +8,6 @@ using MmmjrBot.Lib.CachedObjects;
 using MmmjrBot.Lib.CommonTasks;
 using MmmjrBot.Lib.Global;
 using MmmjrBot.MapperBot;
-using MmmjrBot.QuestBot;
 
 namespace MmmjrBot.Lib
 {
@@ -89,10 +88,7 @@ namespace MmmjrBot.Lib
                 HandleBlockingChestsTaskStatic.Processed.Clear();
                 HandleBlockingObjectTaskStatic._attempts = 0;
                 HandleBlockingObjectTaskStatic._lastId = 0;
-                if(MmmjrBotSettings.Instance.EnableQuestBot)
-                {
-                    TownQuestgiversLogic.Reset();
-                }
+
                 // Change FPS per area.
                 if (DreamPoeBot.Loki.GlobalSettings.Instance.IsBackgroundFpsActive)
                 {
