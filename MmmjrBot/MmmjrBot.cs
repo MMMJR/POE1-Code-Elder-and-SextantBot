@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using DreamPoeBot.Loki.Bot;
@@ -8,11 +7,8 @@ using DreamPoeBot.Loki.Common;
 using DreamPoeBot.Loki.Coroutine;
 using DreamPoeBot.Loki.Game;
 using DreamPoeBot.Loki.Game.GameData;
-using DreamPoeBot.Loki.Game.NativeWrappers;
 using DreamPoeBot.Loki.Game.Objects;
-//using MmmjrBot.Class;
 using MmmjrBot.Lib;
-//using MmmjrBot.Lib.CommonTasks;
 using MmmjrBot.Lib.Global;
 using log4net;
 
@@ -21,10 +17,6 @@ using UserControl = System.Windows.Controls.UserControl;
 using MmmjrBot.Lib.CommonTasks;
 using System;
 using MmmjrBot.Class;
-using MmmjrBot.CommonTasks;
-using MmmjrBot.QuestBot;
-using MmmjrBot.Lib.Positions;
-using System.Runtime;
 using MmmjrBot.MapperBot;
 
 public enum MapperBotState
@@ -105,24 +97,7 @@ namespace MmmjrBot
         {
             _taskManager.Reset();
 
-            if(botId == 0 && enabled) //follow bot
-            {
-                _taskManager.Add(new ClearCursorTask());
-                _taskManager.Add(new DefenseAndFlask());
-                _taskManager.Add(new LootItemTask());
-                _taskManager.Add(new PreCombatFollowTask());
-                _taskManager.Add(new CombatTask(50));
-                _taskManager.Add(new PostCombatHookTask());
-                _taskManager.Add(new LevelGemsTask());
-                _taskManager.Add(new CombatTask(-1));
-                _taskManager.Add(new CastAuraTask());
-                _taskManager.Add(new TravelToPartyZoneTask());
-                _taskManager.Add(new FollowTask());
-                _taskManager.Add(new OpenWaypointTask());
-                _taskManager.Add(new JoinPartyTask());
-                _taskManager.Add(new FallbackTask());
-            }
-            else if(botId == 1 && enabled) //SextantBot
+            if(botId == 1 && enabled) //SextantBot
             {
                 _taskManager.Add(new SextantTask());
             }
@@ -130,33 +105,6 @@ namespace MmmjrBot
             {
                 mapbot_state = MapperBotState.OpeningMap;
                 _taskManager.Add(new FarmingTask());
-            }
-            else if(botId == 3 && enabled) //QuestBot
-            {
-                _taskManager.Add(new ClearCursorTask());
-                _taskManager.Add(new QuestDefenseAndFlask());
-                _taskManager.Add(new AssignMoveSkillTask());
-                _taskManager.Add(new LeaveAreaTask());
-                _taskManager.Add(new TravelToHideoutTask());
-                _taskManager.Add(new HandleBlockingChestsTask());
-                _taskManager.Add(new HandleBlockingObjectTask());
-                _taskManager.Add(new CombatTask(50));
-                _taskManager.Add(new ReturnAfterDeathTask());
-                _taskManager.Add(new PostCombatHookTask());
-                _taskManager.Add(new QuestLevelGemsTask());
-                _taskManager.Add(new LootItemTask());
-                _taskManager.Add(new OpenChestTask());
-                _taskManager.Add(new CombatTask(-1));
-                _taskManager.Add(new IdTask());
-                _taskManager.Add(new SellTask());
-                _taskManager.Add(new StashTask());
-                _taskManager.Add(new CurrencyRestockTask());
-                _taskManager.Add(new SortInventoryTask());
-                _taskManager.Add(new ReturnAfterTownrunTask());
-                _taskManager.Add(new OpenWaypointTask());
-                _taskManager.Add(new CorruptedAreaTask());
-                _taskManager.Add(new QuestTask());
-                _taskManager.Add(new FallbackTask());
             }
         }
 
@@ -329,23 +277,6 @@ namespace MmmjrBot
                 message.AddOutput(this, IsOnRun);
                 handled = true;
             }
-            else if (id == Events.Messages.IngameBotStart)
-            {
-                QuestManager.CompletedQuests.Instance.Verify();
-                handled = true;
-            }
-            else if (message.Id == "QB_get_current_quest")
-            {
-                var s = MmmjrBotSettings.Instance;
-                message.AddOutputs(this, s.CurrentQuestName, s.CurrentQuestState);
-                handled = true;
-            }
-            else if (message.Id == "QB_finish_grinding")
-            {
-                GlobalLog.Debug("[QuestBot] Grinding force finish: true");
-                GrindingHandler.ForceFinish = true;
-                handled = true;
-            }
             else if (id == Messages.SetIsOnRun)
             {
                 var value = message.GetInput<bool>();
@@ -383,16 +314,6 @@ namespace MmmjrBot
             BotManager.OnBotChanged += BotManagerOnOnBotChanged;
             GameOverlay.TimerService.EnableHighPrecisionTimers();
             _overlay.Start();
-            //retirada a protecao de key do bot, se for usar novamente, adicionar ao loop de tick para nao ter problema com bypass.
-            /*_ = Task.Run(async () =>
-            {
-                if (await VerifySuApiClient.VerifyUserKey())
-                {
-                    var DaysLeft = await VerifySuApiClient.VerifySu.GetKeyExpirationDate(MmmjrBotSettings.Instance.UserKey);
-                    if (DaysLeft == null) DaysLeft = "1";
-                    MmmjrBotSettings.Instance.DaysLeft = DaysLeft;
-                }
-            });*/
         }
 
         public void Deinitialize()
@@ -410,23 +331,6 @@ namespace MmmjrBot
 
         private void AddTasks()
         {
-
-            //_taskManager.Add(new ClearCursorTask());
-            //_taskManager.Add(new FarmingTask());
-            //_taskManager.Add(new SextantTask());
-           /*_taskManager.Add(new DefenseAndFlaskTask());
-            _taskManager.Add(new LootItemTask());
-            _taskManager.Add(new PreCombatFollowTask());
-            _taskManager.Add(new CombatTask(50));
-            _taskManager.Add(new PostCombatHookTask());
-            _taskManager.Add(new LevelGemsTask());
-            _taskManager.Add(new CombatTask(-1));
-            _taskManager.Add(new CastAuraTask());
-            _taskManager.Add(new TravelToPartyZoneTask());
-            _taskManager.Add(new FollowTask());
-            _taskManager.Add(new OpenWaypointTask());
-            _taskManager.Add(new JoinPartyTask());
-            _taskManager.Add(new FallbackTask());*/
         }
 
         private static ExplorationSettings MapBotExploration()
