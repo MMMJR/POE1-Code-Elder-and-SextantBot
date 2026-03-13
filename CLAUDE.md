@@ -13,6 +13,28 @@ Path of Exile 1 bot plugin for the **DreamPoeBot** framework. Supports two activ
 msbuild MmmjrBot/MmmjrBot.csproj /p:Configuration=Debug
 ```
 
+## DreamPoeBot Framework Version
+Currently targeting **v0.3.28.05 BETA**. Key API changes in this version:
+- `MasterDeviceUi` is **obsolete** — all map device functionality moved to `LokiPoe.InGameState.AtlasUi.MapDevice`
+- `MapDeviceUi` is **obsolete** — same migration to `AtlasUi.MapDevice`
+- Interacting with the physical Map Device now opens `LokiPoe.InGameState.AtlasUi` (the Atlas panel), not a standalone UI
+- `ActivateResult` lives at `LokiPoe.InGameState.ActivateResult` (unchanged)
+
+### Key AtlasUi API
+```csharp
+LokiPoe.InGameState.AtlasUi.IsOpened               // Atlas panel visible
+LokiPoe.InGameState.AtlasUi.MapDevice.IsOpened      // Map Device panel visible within Atlas
+LokiPoe.InGameState.AtlasUi.MapDevice.InventoryControl  // InventoryControlWrapper for device slots
+LokiPoe.InGameState.AtlasUi.MapDevice.Activate()    // returns LokiPoe.InGameState.ActivateResult
+LokiPoe.InGameState.AtlasUi.MapDevice.IsFiveSlotDevice
+LokiPoe.InGameState.AtlasUi.MapDevice.IsSixSlotDevice
+```
+
+In `OpenMapTask.cs` a type alias is used to keep call sites clean:
+```csharp
+using AtlasMapDevice = DreamPoeBot.Loki.Game.LokiPoe.InGameState.AtlasUi.MapDevice;
+```
+
 ## Project Structure
 
 ```
@@ -48,7 +70,7 @@ MmmjrBot/
 │   ├── GlobalLog.cs
 │   ├── InputDelayOverride.cs
 │   ├── Interval.cs
-│   ├── Inventories.cs
+│   ├── Inventories.cs          # OpenInventory2(), FastMoveFromInventory(), InventoryItems, etc.
 │   ├── ITaskManagerHolder.cs
 │   ├── MapNames.cs
 │   ├── MessageBoxes.cs
@@ -97,9 +119,8 @@ MmmjrBot/
 │   ├── LevelGemsTaskStatic.cs
 │   ├── MapData.cs
 │   ├── MapExplorationTask.cs
-│   ├── MapExtensions.cs
-│   ├── MapperBot.cs (implicit via FarmingTask.cs)
-│   ├── OpenMapTask.cs
+│   ├── MapExtensions.cs         # IsMap(), IsMapFragment(), IsSacrificeFragment(), AtlasData
+│   ├── OpenMapTask.cs           # Map device open/fill/activate logic (see below)
 │   ├── TakeMap.cs
 │   ├── TrackMob.cs
 │   ├── TravelToHideoutTaskStatic.cs
@@ -160,6 +181,53 @@ public enum MapperBotState { GetItems, OpeningMap, Mapping, LeavingArea, Storing
 public enum SextantBotState { GetItems = 1, RunningRow = 2, StoringRow = 3, StoringCompassInStash = 4 }
 ```
 `SextantTask.sextantBotState` tracks the current sextant automation phase.
+
+## OpenMapTask — Map Device Flow
+
+`OpenMapTask.Run()` handles all map-opening modes. The active mode for ElderBot is `SingleUseElderFragments`.
+
+### Elder Fragment Flow (`SingleUseElderFragments`)
+```
+1. OpenDevice()
+   → Walk to physical Map Device object
+   → Interact → wait for AtlasUi.IsOpened
+   → Retry if AtlasUi.MapDevice.IsOpened is still false
+
+2. If AtlasUi.MapDevice is not yet open:
+   → Open inventory (Inventories.OpenInventory2())
+   → Right-click any one elder fragment from inventory
+     (UseItem via InventoryUi.InventoryControl_Main.UseItem)
+   → Game auto-opens device panel AND auto-places all 4 fragments
+   → Verify AtlasUi.MapDevice.IsOpened
+
+3. CheckDeviceHaveFragments()
+   → If all 4 already inside → goto opmap (skip re-fill)
+
+4. ClearDevice() — if device has stale items, FastMove them back to inventory
+
+5. Open inventory, verify all 4 fragments present
+
+6. RightClickElderFragment(frag.LocalId)
+   → InventoryUi.InventoryControl_Main.UseItem(localId)
+   → Wait 2 seconds for game to auto-place all 4
+
+7. Verify AtlasMapDevice.InventoryControl.Inventory.Items.Count >= 4
+
+opmap:
+8. ActivateDevice()
+   → AtlasMapDevice.Activate()
+   → Check LokiPoe.InGameState.ActivateResult.None
+   → Wait for AtlasMapDevice.IsOpened == false
+
+9. TakeMapPortal() with retry logic (up to 10 attempts)
+
+10. MapData.ResetCurrent(), KillBossTask.SetNew(), MapExplorationTask.Reset()
+```
+
+### Other Modes
+- **AtlasExplorationEnabled**: Places a regular map + optional Vaal fragment via `FastMove`
+- **SingleUseShaperGuardianMap**: Places one of the 4 Shaper guardian maps
+- **SingleUseShaperFragments**: Places all 4 Shaper fragments individually via `FastMove`
 
 ## GUI / XAML
 

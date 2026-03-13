@@ -20,8 +20,6 @@ namespace MmmjrBot.Lib
                 if (bot is ITaskManagerHolder holder)
                     return holder.GetTaskManager();
 
-                GlobalLog.Debug($"[BotStructure] \"{bot.Name}\" does not implement ITaskManagerHolder interface.");
-
                 var msg = new Message(GetTaskManagerMessage);
                 bot.Message(msg);
                 var taskManager = msg.GetOutput<TaskManager>();

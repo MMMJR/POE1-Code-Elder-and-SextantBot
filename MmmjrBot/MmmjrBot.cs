@@ -99,7 +99,7 @@ namespace MmmjrBot
 
             if(botId == 1 && enabled) //SextantBot
             {
-                _taskManager.Add(new SextantTask());
+                //_taskManager.Add(new SextantTask());
             }
             else if(botId == 2 && enabled) //FarmingBot
             {

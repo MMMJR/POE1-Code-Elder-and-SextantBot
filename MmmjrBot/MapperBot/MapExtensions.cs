@@ -97,7 +97,7 @@ namespace MmmjrBot.MapperBot
 
                 foreach (var area in LokiPoe.InstanceInfo.Atlas.BonusCompletedAreas)
                 {
-                    BonusCompletedAreas.Add(area.Name);
+                    BonusCompletedAreas.Add(area.Id);
                 }
             }
         }

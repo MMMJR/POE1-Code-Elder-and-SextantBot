@@ -101,6 +101,23 @@ namespace MmmjrBot.Lib
             return true;
         }
 
+        public static async Task<bool> OpenInventory2()
+        {
+            if (InventoryUi.IsOpened && !LokiPoe.InGameState.PurchaseUi.IsOpened && !LokiPoe.InGameState.SellUi.IsOpened)
+                return true;
+
+            //await Coroutines.CloseBlockingWindows();
+
+            LokiPoe.Input.SimulateKeyEvent(LokiPoe.Input.Binding.open_inventory_panel, true, false, false);
+
+            if (!await Wait.For(() => InventoryUi.IsOpened, "inventory panel opening"))
+                return false;
+
+            await Wait.ArtificialDelay();
+            await Wait.Sleep(20);
+            return true;
+        }
+
         public static async Task<bool> OpenAtlasUIAndInventory()
         {
             if (AtlasUi.IsOpened)
